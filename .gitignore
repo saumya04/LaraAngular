@@ -1,0 +1,17 @@
+/node_modules
+/public/storage
+/vendor
+/.idea
+/.vscode
+Homestead.json
+Homestead.yaml
+.env
+
+/public/@angular
+public/anular2-in-memory-web-api
+public/core-js
+public/reflect-metadata
+public/systemjs
+public/rxjs
+public/zone.js
+public/app
