@@ -1,5 +1,7 @@
 # Laravel 5 integration with Angular 2
 
+This repo helps you to get you up with Laravel &amp; Angular in minutes.
+
 Larvel Version: **5.3.19**
 
 Angular Version: **2.1.0**
@@ -293,6 +295,7 @@ gulp
     </body>
 </html>
 ```
+
 > Run the project by simply writing executing the command `php artisan serve` and just open up the link in your favourite browser `http://localhost:8000/`. Tada it should seems to be working now! :D
 
 Credits &amp; References
