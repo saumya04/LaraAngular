@@ -2,11 +2,20 @@
 /public/storage
 /vendor
 /.idea
-/.vscode
 Homestead.json
 Homestead.yaml
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+bootstrap/cache/
+.env.*.php
+.env.php
 .env
 
+# Angular 2.1.0 with Laravel 5.3 Specific
 /public/@angular
 public/anular2-in-memory-web-api
 public/core-js
@@ -15,3 +24,9 @@ public/systemjs
 public/rxjs
 public/zone.js
 public/app
+
+# Visual Studio Code Specific
+/.vscode
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
