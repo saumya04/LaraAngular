@@ -219,8 +219,10 @@ elixir(mix => {
 ```
 gulp
 ```
-> After executing the above command, all the **SASS/SCSS, TS** files will be compiled and moved to the `public` directory of your Laravel Project
+> After executing the above command, all the **SASS/SCSS, TS** files will be compiled and moved to the `public` directory > of your Laravel Project
+
 14. Create a file `systemjs.config.js` in your public directory.
+
 ```
 /**
  * System configuration for Angular samples
@@ -266,7 +268,9 @@ gulp
   });
 })(this);
 ```
+
 15. Now we're done with our integration. We now have to just show up our first output from Angular onto our screen. Goto `resources/views/welcome.blade.php` and write the following lines inside it.
+
 ```
 <!DOCTYPE html>
 <html lang="en">
