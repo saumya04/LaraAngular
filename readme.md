@@ -11,12 +11,14 @@ Angular Version: **2.1.0**
 
 Steps for integration:
 
-1. Install Laravel to the specific_directory (totally depends upon you)
+##### 1. Install Laravel to the specific_directory (totally depends upon you)
+
 ```
 composer create-project --prefer-dist laravel/laravel LaraAngular
 ```
 
-2. After installing Laravel give directories the specific persmissions in case of *Linux*
+##### 2. After installing Laravel give directories the specific persmissions in case of *Linux*
+
 ```
 sudo chmod -R 777 storage/
 sudo chmod -R 777 bootstrap/cache
@@ -25,7 +27,9 @@ Also generate project key using this command (if not generated)
 ```
 php artisan key:generate
 ```
-3. Open up the ***package.json*** file in the root directory of your Laravel Project. Paste the below code into it.
+
+##### 3. Open up the ***package.json*** file in the root directory of your Laravel Project. Paste the below code into it.
+
 ```
 {
   "private": true,
@@ -75,7 +79,9 @@ php artisan key:generate
   }
 }
 ```
-4. Create a new file named ***tsconfig.json*** in the root directory of your Laravel Project
+
+##### 4. Create a new file named **tsconfig.json** in the root directory of your Laravel Project
+
 ```
 {
   "compilerOptions": {
@@ -91,7 +97,7 @@ php artisan key:generate
 }
 ```
 
-5. Create a new file named ***typings.json*** in the root directory of your Laravel Project
+##### 5. Create a new file named ***typings.json*** in the root directory of your Laravel Project
 
 ```
 {
@@ -103,29 +109,29 @@ php artisan key:generate
 }
 ```
 
-6. Now run the below mentioned command in your terminal *(before running this command you should have installed npm globally on your OS)*
+##### 6. Now run the below mentioned command in your terminal *(before running this command you should have installed npm globally on your OS)*
 
 ```
 npm install
 ```
 > This will install all the necessary packages from ***Node Package Modules*** Server
 
-7. After finishing up the packages installation go to - `node_modules > elixer-typescript > index.js` file and comment out this line as shown in code
+##### 7. After finishing up the packages installation go to - `node_modules > elixer-typescript > index.js` file and comment out this line as shown in code
 
 ```
 // .pipe($.concat(paths.output.name))
 ```
 > We've done this to **avoid the concatenation of js/ts files**
 
-8. Now we're done with our initial required setup. After completing all the above steps create a new directory (named **typescript**) at `resources > assets > typescript`
+##### 8. Now we're done with our initial required setup. After completing all the above steps create a new directory (named **typescript**) at `resources > assets > typescript`
 
-9. Now we're starting with creating our angular files. We need to create 3 files required for angular to start with.
+##### 9. Now we're starting with creating our angular files. We need to create 3 files required for angular to start with.
 - *app.component.ts*
 - *app.module.ts*
 - *main.ts*
 > These file will be created in the directory `resource/assets/typescript`
 
-10. The code for all the 3 files is given below
+##### 10. The code for all the 3 files is given below
 
 File: `app.component.ts`
 ```
@@ -164,7 +170,8 @@ const platform = platformBrowserDynamic();
 platform.bootstrapModule(AppModule);
 ```
 
-11. Open up `gulpfile.js` from the root directory of your Laravel Project and paste the below code into it.
+##### 11. Open up `gulpfile.js` from the root directory of your Laravel Project and paste the below code into it.
+
 ```
 const elixir = require('laravel-elixir');
 
@@ -214,14 +221,17 @@ elixir(mix => {
     );
 });
 ```
-12. Create a directory named (**app**) in the public directory of your Laravel Project - `public/app` 
-13. Then run the below command in your terminal
+
+##### 12. Create a directory named (**app**) in the public directory of your Laravel Project - `public/app` 
+
+##### 13. Then run the below command in your terminal
+
 ```
 gulp
 ```
 > After executing the above command, all the **SASS/SCSS, TS** files will be compiled and moved to the `public` directory > of your Laravel Project
 
-14. Create a file `systemjs.config.js` in your public directory.
+##### 14. Create a file `systemjs.config.js` in your public directory.
 
 ```
 /**
@@ -269,7 +279,7 @@ gulp
 })(this);
 ```
 
-15. Now we're done with our integration. We now have to just show up our first output from Angular onto our screen. Goto `resources/views/welcome.blade.php` and write the following lines inside it.
+##### 15. Now we're done with our integration. We now have to just show up our first output from Angular onto our screen. Goto `resources/views/welcome.blade.php` and write the following lines inside it.
 
 ```
 <!DOCTYPE html>
