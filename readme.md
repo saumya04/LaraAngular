@@ -116,7 +116,7 @@ npm install
 ```
 > This will install all the necessary packages from ***Node Package Modules*** Server
 
-##### 7. After finishing up the packages installation go to - `node_modules > elixer-typescript > index.js` file and comment out this line as shown in code
+##### 7. After finishing up the packages installation go to - `node_modules > elixir-typescript > index.js` file and comment out this line as shown in code
 
 ```
 // .pipe($.concat(paths.output.name))
@@ -129,6 +129,7 @@ npm install
 - *app.component.ts*
 - *app.module.ts*
 - *main.ts*
+
 > These file will be created in the directory `resource/assets/typescript`
 
 ##### 10. The code for all the 3 files is given below
