@@ -1,6 +1,6 @@
 # Laravel 5 integration with Angular 2
 
-This repo helps you to get you up with Laravel &amp; Angular in minutes.
+This repo helps you to get you up with Laravel 5.3 &amp; Angular 2 in minutes.
 
 Larvel Version: **5.3.19**
 
@@ -11,7 +11,7 @@ Angular Version: **2.1.0**
 
 Steps for integration:
 
-##### 1. Install Laravel to the specific_directory (totally depends upon you)
+##### 1. Install Laravel to the specific directory (totally depends upon you)
 
 ```
 composer create-project --prefer-dist laravel/laravel LaraAngular
@@ -130,7 +130,7 @@ npm install
 - *app.module.ts*
 - *main.ts*
 
-> These file will be created in the directory `resource/assets/typescript`
+> These file will be created in the directory `resources/assets/typescript`
 
 ##### 10. The code for all the 3 files is given below
 
@@ -311,7 +311,7 @@ gulp
 </html>
 ```
 
-> Run the project by simply writing executing the command `php artisan serve` and just open up the link in your favourite browser `http://localhost:8000/`. Tada it should seems to be working now! :D
+> Run the project by simply executing the command in your terminal `php artisan serve` and just open up the link in your favourite browser `http://localhost:8000/`. Tada it should seems to be working now! :D
 
 Credits &amp; References
 =============
